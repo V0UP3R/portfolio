@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="assets/css/work.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-REm6dQESKo51C9N5HX1PU4P0gZvz9a4QbQ8S7f4TxgS/G9l19Sw3UTyr/l6WCSHs" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="/assets/js/email.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -75,7 +76,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="emailForm" onsubmit="event.preventDefault(); sendEmail(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value);">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
