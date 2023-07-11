@@ -1,0 +1,20 @@
+.project {
+  margin-bottom: 20px;
+}
+
+.project h2 {
+  font-size: 18px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
